@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Monthsary My Love ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc3a0);
+}
+
+/* Floating Hearts */
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 30px;
+    animation: float 8s linear infinite;
+}
+
+.heart:nth-child(1) { left: 10%; }
+.heart:nth-child(2) { left: 30%; animation-delay: 2s; }
+.heart:nth-child(3) { left: 50%; animation-delay: 4s; }
+.heart:nth-child(4) { left: 70%; animation-delay: 1s; }
+.heart:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% { opacity: 1; }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Love Card */
+
+.card {
+    width: 90%;
+    max-width: 430px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px 25px;
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(150,30,70,0.3);
+    animation: appear 2s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.flower {
+    font-size: 65px;
+    animation: flower 3s infinite ease-in-out;
+}
+
+@keyframes flower {
+    0%, 100% { transform: rotate(-10deg) scale(1); }
+    50% { transform: rotate(10deg) scale(1.2); }
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+    margin: 15px 0;
+    text-shadow: 0 0 15px #ff0055;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.love {
+    margin-top: 20px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.signature {
+    margin-top: 20px;
+    font-style: italic;
+    color: white;
+    font-size: 18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="heart">❤️</div>
+<div class="heart">💕</div>
+<div class="heart">💗</div>
+<div class="heart">💖</div>
+<div class="heart">💘</div>
+
+<div class="card">
+
+    <div class="flower">💐</div>
+
+    <h1>Happy Monthsary!</h1>
+
+    <h2>To My One and Only Love ❤️</h2>
+
+    <p>
+        Happy monthsary, my love! 🥺❤️
+        A month of loving you, choosing you,
+        and being grateful that I have you in my life.
+    </p>
+
+    <br>
+
+    <p>
+        If you only knew how much happiness you bring
+        into my world. Your smile makes my day brighter,
+        your voice makes my heart feel at home,
+        and your love gives me a reason to keep smiling.
+    </p>
+
+    <br>
+
+    <p>
+        I know we're not perfect, and sometimes
+        we may have misunderstandings.
+        But please remember that no matter what happens,
+        my heart will always choose you.
+    </p>
+
+    <br>
+
+    <p>
+        I want to be there for you on your happiest days
+        and hold you close on your hardest ones.
+        I want to celebrate your dreams,
+        support your goals, and love you in ways
+        that make you feel safe and appreciated.
+    </p>
+
+    <br>
+
+    <p>
+        You are my favorite person,
+        my sweetest blessing,
+        my comfort, and my forever.
+        I don't need a perfect love story.
+        I just want a beautiful life with you.
+    </p>
+
+    <div class="love">
+        I LOVE YOU SO MUCH! ❤️💋
+    </div>
+
+    <br>
+
+    <p>
+        Here's to more months,
+        more memories, more laughter,
+        more kisses, and a lifetime of love.
+    </p>
+
+    <div class="signature">
+        Forever yours, my love. 👩‍❤️‍💋‍👨
+    </div>
+
+    <audio controls autoplay loop>
+        <source src="Westlife I Lay My Love on You Official Video.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <p style="font-size:13px; margin-top:8px;">
+        🎵 this song for my favorite person I love🎵
+    </p>
+
+</div>
+
+</body>
+</html>
